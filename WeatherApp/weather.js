@@ -15,7 +15,7 @@ var tempC;
 
 var apiUrl = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=88d7747abc290c8a803e9c34ae064b02&units=metric";
 	$.getJSON(apiUrl, function(data){
-		var weatherCondition = data[0].weather.description;
+		var weatherCondition = data.weather.description;
 		var kelvinTemp = data.main.temp;
 		var switchTemp = true;
 		tempF = (kelvinTemp * (9 / 5) - 459.67).toFixed(0);
