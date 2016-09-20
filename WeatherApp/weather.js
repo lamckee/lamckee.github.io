@@ -26,10 +26,10 @@ var apiUrl = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weat
 
 
 
-		$("city").html(city);
-		$("tempF").html(tempF + " &#8457;");
-		$("condition").html(weatherCondition);
-		$("wind").html(wind + " MPH");
+		$("#city").html(city);
+		$("#tempF").html(tempF + " &#8457;");
+		$("#condition").html(weatherCondition);
+		$("#wind").html(wind + " MPH");
 
 		$("tempF").click(function(){
 			if(switchTemp === false){
