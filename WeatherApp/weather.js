@@ -39,7 +39,7 @@ var apiUrl = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weat
 				$("tempF").html(tempC + " &#8451;");
 				switchTemp = false;
 			}
-		}
+		});
 
 	});
 });
