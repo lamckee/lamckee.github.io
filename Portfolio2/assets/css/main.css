@@ -24,7 +24,9 @@ h1 {
 	margin-bottom: 30px;
 }
 
-
+.head{
+  color: #5fcf80;
+}
 
 /* Paragraph & Typographic */
 p {
@@ -133,7 +135,7 @@ a:after {
 
 /* +++++ WRAP SECTIONS +++++ */
 
-#ww {
+#home {
 	padding-top: 70px;
 	padding-bottom: 70px;
 	background-color: #f2f2f2;
@@ -157,21 +159,6 @@ a:after {
 
 #info p {
   font-size: 14px;
-}
-
-
-/* +++++ Color Wraps / Blog Page +++++ */
-
-#grey {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: #f2f2f2;
-}
-
-#white {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background-color: #ffffff;
 }
 
 
