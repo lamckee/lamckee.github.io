@@ -6,7 +6,7 @@ $('document').ready(function(){
 	latitude = data2.lat;
 	longitude = data2.lon;
 
-
+});
 		$.getJSON(apiUrl, function(data){
 			var weatherCondition = data.weather[0].description;
 			var kelvinTemp = data.main.temp;
