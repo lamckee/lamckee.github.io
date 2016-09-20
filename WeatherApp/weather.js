@@ -13,7 +13,7 @@ var tempC;
 	});
 }
 
-var apiUrl = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=88d7747abc290c8a803e9c34ae064b02&units=metric";
+var apiUrl = "http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=88d7747abc290c8a803e9c34ae064b02&units=metric";
 	$.getJSON(apiUrl, function(data){
 		var weatherCondition = data.weather[0].main;
 		var kelvinTemp = data.main.temp;
