@@ -1,23 +1,30 @@
 $('document').ready(function(){
-	var latitude;
-	var longitude;
-	$.getJSON("http://ip-api.com/json", function(data2){
-	latitude = data2.lat;
-	longitude = data2.lon;
-	var apiUrl = "http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=88d7747abc290c8a803e9c34ae064b02&units=metric";
 
+var longitude;
+var latitude;
+var tempF;
+var tempC;
+	if (navigator.geolocation) {
+  	navigator.geolocation.getCurrentPosition(function(position) {
+			longitude = position.coords.longitude;
+			latitude = position.coords.longitude;
+
+
+	});
+}
+
+var apiUrl = "https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=88d7747abc290c8a803e9c34ae064b02&units=metric";
 	$.getJSON(apiUrl, function(data){
-		var tempC;
-		var tempF;
 		var weatherCondition = data.weather[0].description;
 		var kelvinTemp = data.main.temp;
-		var city = data.name;
-		var wind = data.wind.speed;
 		var switchTemp = true;
-
 		tempF = (kelvinTemp * (9 / 5) - 459.67).toFixed(0);
 		tempC = (kelvinTemp - 273).toFixed(0);
+		var city = data.name
+		var wind = data.wind.speed;
 		wind = (2.237 * ( wind )).toFixed(0);
+
+
 
 		$("#city").html(city);
 		$("#tempF").html(tempF + " &#8457;");
@@ -34,7 +41,6 @@ $('document').ready(function(){
 			}
 		});
 
-	});
 
-});
+	});
 });
