@@ -13,7 +13,7 @@ var tempC;
 	});
 }
 
-var apiUrl = "http://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=88d7747abc290c8a803e9c34ae064b02&units=metric";
+var apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=" + latitude + "&lon=" + longitude + "&APPID=88d7747abc290c8a803e9c34ae064b02&units=metric";
 	$.getJSON(apiUrl, function(data){
 		var weatherCondition = data.weather[0].description;
 		var kelvinTemp = data.main.temp;
