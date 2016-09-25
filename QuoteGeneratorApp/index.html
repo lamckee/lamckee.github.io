@@ -1,65 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html >
   <head>
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+
+
+    <title>Random Quote Machine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css" type="text/css">
-    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+	<link rel="stylesheet" href="quotecss.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+
   </head>
+
   <body>
 
-    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <div class = "container-fluid text-center">
+<h1 class="title">Random Quote Machine</h1>
+	<p>Application recieves quote data from Forismatic API</p>
+	<div id = quoteBox class = "container quoteBox">
+	<p id = "quote"></p>
+	<p id = "author"</p>
+	</div>
+	<div class = "container buttonArea">
+		<a id="tweetButton" target="_blank" rel="noopener noreferrer"> <img class="tweetLogo" src="http://www.attendly.com/wp-content/themes/attendly2/img/icon-twitter.svg"></a>
+			<button class="quote-btn btn btn-primary" onclick="newQuote()">New Quote</button>
+	</div>
 
-<h1 class='text-primary'>Random Quote Generator!</h1>
-<br><br>
-<button class='btn1 btn-primary'>New Quote</button>
-<button class='btn2 btn-primary'>Tweet Quote</button>
-<br><br><br>
-<div class='quoteBox'>
-  <div id='quote'></div>
-  <div id='author'></div>
 </div>
-<div class = link><a href="https://www.mashape.com/andruxnet/random-famous-quotes" target="MashApe">Quotes Courtesy of MashApe</a><div>
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h4>Contact</h4>
+					<p>
+						<a href="tel:555-555-5555"><img src="http://image.flaticon.com/icons/svg/46/46854.svg" height="23px" width="23px"> (555)555-5555 </a><br/>
+            <a href="mailto:landon.mc52@gmail.com"><img src="http://christopherhowell.net/images/email-magician.svg" height="23px" width="23px"> landon.mc52@gmail.com </a><br/>
+					</p>
+				</div>
 
-<div class="fb-share-button" data-href="https://landon228.github.io/QuoteGeneratorApp/" data-layout="button_count" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank"
-  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flandon228.github.io%2FQuoteGeneratorApp%2F&amp;src=sdkpreparse">Share</a></div>
-  <footer class="footer">
-  <div class="container-fluid text-center">
-    <div class="footer-text text-muted row">Copyright &copy;
-      <script>document.write(new Date().getFullYear());</script>
-      Landon McKee. All rights reserved. Developed for the freeCodeCamp Challenge:
-      <a href="https://www.freecodecamp.com/challenges/build-a-random-quote-machine" target="_blank">Build a Random Quote Machine</a>.
-      <br>Data retrieved from
-      <span>
-        <a href="https://www.mashape.com/" target="_blank" alt="Mashape">
-          <img class="attribution-logo" src="https://www.drillster.com/info/img/logo-mashape.png">
-        </a>
-      </span>
-    </div>
-    <div class="footer-logos row">
-      <a href="https://www.linkedin.com/in/landon-mckee-8b880271" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="https://github.com/landon228" target="_blank"><i class="fa fa-github"></i></a>
-      <a href="https://freecodecamp.com/landon228" target="_blank"><i class="fa fa-fire"></i></a>
-      <a href="https://codepen.io/landon228/pens/public" target="_blank"><i class="fa fa-codepen"></i></a>
+				<div class="col-lg-4">
+					<h4>Code Samples & Profiles</h4>
+					<p>
+						<a href="https://github.com/lamckee" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" height="23px" width="23px"></a>
+            <a href="https://www.linkedin.com/in/landon-mckee-8b880271" target="_blank"><img src="http://image.flaticon.com/icons/svg/61/61109.svg" height="23px" width="23px"></a>
+            <a href="https://codepen.io/lmckee/" target="_blank"><img src="https://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg" height="23px" width="23px"></a>
+						<a href="https://teamtreehouse.com/landonmckee" target="_blank"><img src="https://worldvectorlogo.com/logos/treehouse.svg" height="23px" width="23px"></a>
+						<a href="https://www.freecodecamp.com/lamckee" target="_blank"><img src="https://cdn.rawgit.com/Deftwun/e3756a8b518cbb354425/raw/6584db8babd6cbc4ecb35ed36f0d184a506b979e/free-code-camp-logo.svg" height="23px" width="23px"></a><br/>
+					</p>
+				</div>
+
+				<div id="info" class="col-lg-4">
+					<h4>Site Info</h4>
+          <p>Icons made by<a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>is licensed by<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+					<p>This site is built and maintained by Landon McKee.</p>
+				</div>
+      </div>
     </div>
   </div>
-</footer>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="quoteapp.js"></script>
-</body>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='quotescript.js'></script>
+
+  </body>
 </html>
