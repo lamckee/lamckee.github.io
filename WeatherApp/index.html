@@ -1,29 +1,58 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
+<html>
+<head>
+<title>Local Weather</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="weather.css">
+</head>
+<body>
+  <div class = "title>"><h2 class = "text-center title">Local Weather App</h2></div>
+		<div class = "container text-center weatherBox">
+			<h3 id = "city"></h3>
+			<h3>
+          <span id="temp"></span>
+				  <a href="#" id = "unit" onclick = "convertTemp()"></a></button><br>
+          <span id = "description"></span><br>
+					<span id = "wind"></span>
 
-    <title>Landon McKee</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        </h3>
+			<img id = weatherIcon src="" alt="WeatherIcon"><br>
+			<p class = "info">Data retrieved from OpenWeatherMap API.<p>
 
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css'>
-    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='weather.css'>
+		</div>
+<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h4>Contact</h4>
+					<p>
+						<a href="tel:555-555-5555"><img src="http://image.flaticon.com/icons/svg/46/46854.svg" height="23px" width="23px"> (555)555-5555 </a><br/>
+            <a href="mailto:landon.mc52@gmail.com"><img src="http://christopherhowell.net/images/email-magician.svg" height="23px" width="23px"> landon.mc52@gmail.com </a><br/>
+					</p>
+				</div>
 
-  </head>
+				<div class="col-lg-4">
+					<h4>Code Samples & Profiles</h4>
+					<p>
+						<a href="https://github.com/lamckee" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" height="23px" width="23px">   My GitHub </a><br/>
+            <a href="https://www.linkedin.com/in/landon-mckee-8b880271" target="_blank"><img src="http://image.flaticon.com/icons/svg/61/61109.svg" height="23px" width="23px">  LinkedIn</a><br/>
+            <a href="https://codepen.io/lmckee/" target="_blank"><img src="https://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg" height="23px" width="23px">  CodePen</a><br/>
+					<h4>Code Schools I Use:</h4>
+						<a href="https://teamtreehouse.com/landonmckee" target="_blank"><img src="https://worldvectorlogo.com/logos/treehouse.svg" height="23px" width="23px">  TreeHouse </a><br/>
+						<a href="https://www.freecodecamp.com/lamckee" target="_blank"><img src="https://cdn.rawgit.com/Deftwun/e3756a8b518cbb354425/raw/6584db8babd6cbc4ecb35ed36f0d184a506b979e/free-code-camp-logo.svg" height="23px" width="23px">  FreeCodeCamp</a><br/>
+					</p>
+				</div>
 
-  <body>
-
-    <div class = "container-fluid">
-<p id = "tempF"></p>
-<p id = "city"></p>
-<p id = "condition"></p>
-<p id = "wind"></p>
-
-</div>
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='weather.js'></script>
-
-  </body>
+				<div id="info" class="col-lg-4">
+					<h4>Site Info</h4>
+					<p>Weather icons made by<a href = "http://www.flaticon.com/authors/madebyoliver">madebyoliver</a>from<a href = "www.flaticon.com">www.flaticon.com</a></p>
+					<p>This site is built and maintained by Landon McKee.</p>
+					<p>Data retrieved from OpenWeatherMap API. Built with JQuery, Bootstrap/HTML and CSS.</p>
+				</div>
+<script src="http://www.geoplugin.net/javascript.gp"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="weather.js"></script>
+</body>
 </html>

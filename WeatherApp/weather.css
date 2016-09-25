@@ -1,3 +1,73 @@
-body{
-  background-color: grey;
+@import 'https://fonts.googleapis.com/css?family=Nunito|Shrikhand';
+body {
+background: url(https://static.vecteezy.com/system/resources/previews/000/094/491/original/polygonal-texture-background-vector.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+.weatherBox{
+	background-color: #a5dff9;
+	border-radius: 15px;
+	font-family: 'Nunito';
+	margin: 0 auto;
+	margin-bottom: 100px;
+	min-width: 500px;
+	min-height: 350px;
+	opacity: 0.84;
+}
+#unit{
+	color: #2b90d9;
+}
+
+#weatherIcon{
+	height: 70px;
+	width: 70px;
+	margin-bottom: 50px;
+}
+
+.title{
+	color: grey;
+	font-family: 'Shrikhand';
+	font-size: 40px;
+	margin-top: 75px;
+	margin-bottom: 75px;
+	text-shadow: 2px 2px black;
+
+}
+
+#footer {
+	background-color: #f4f5f9;
+	opacity: .85;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-top: 50px;
+	font-family: 'Nunito';
+}
+
+#footer p {
+	color: #6E7783;
+}
+
+#footer h4 {
+	color: #6E7783;
+	padding-bottom: 20px;
+}
+
+#info p {
+  font-size: 14px;
+}
+a{
+	margin:10px;
+	color: grey;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+	color: #2b90d9;
+}
+img{
+	margin: 3px;
+}
+h4{
+	font-weight: bold;
 }
