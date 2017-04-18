@@ -2,63 +2,26 @@
 <html >
   <head>
     <meta charset="UTF-8">
-
-
     <title>Random Quote Machine</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
-	<link rel="stylesheet" href="quotecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+	  <link rel="stylesheet" href="quotecss.css">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-
-
   </head>
-
   <body>
 
     <div class = "container-fluid text-center">
-<h1 class="title">Random Quote Machine</h1>
-	<p>Application recieves quote data from Forismatic API</p>
-	<div id = quoteBox class = "container quoteBox">
-	<p id = "quote"></p>
-	<p id = "author"</p>
-	</div>
-	<div class = "container buttonArea">
-		<a id="tweetButton" target="_blank" rel="noopener noreferrer"> <img class="tweetLogo" src="http://www.attendly.com/wp-content/themes/attendly2/img/icon-twitter.svg"></a>
-			<button class="quote-btn btn btn-primary" onclick="newQuote()">New Quote</button>
-	</div>
-
-</div>
-	<div id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4">
-					<h4>Contact</h4>
-					<p>
-						<a href="tel:555-555-5555"><img src="http://image.flaticon.com/icons/svg/46/46854.svg" height="23px" width="23px"> (555)555-5555 </a><br/>
-            <a href="mailto:landon.mc52@gmail.com"><img src="http://christopherhowell.net/images/email-magician.svg" height="23px" width="23px"> landon.mc52@gmail.com </a><br/>
-					</p>
-				</div>
-
-				<div class="col-lg-4">
-					<h4>Code Samples & Profiles</h4>
-					<p>
-						<a href="https://github.com/lamckee" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" height="23px" width="23px"></a>
-            <a href="https://www.linkedin.com/in/landon-mckee-8b880271" target="_blank"><img src="http://image.flaticon.com/icons/svg/61/61109.svg" height="23px" width="23px"></a>
-            <a href="https://codepen.io/lmckee/" target="_blank"><img src="https://blog.codepen.io/wp-content/uploads/2014/03/codepen-logo.svg" height="23px" width="23px"></a>
-						<a href="https://teamtreehouse.com/landonmckee" target="_blank"><img src="https://worldvectorlogo.com/logos/treehouse.svg" height="23px" width="23px"></a>
-						<a href="https://www.freecodecamp.com/lamckee" target="_blank"><img src="https://cdn.rawgit.com/Deftwun/e3756a8b518cbb354425/raw/6584db8babd6cbc4ecb35ed36f0d184a506b979e/free-code-camp-logo.svg" height="23px" width="23px"></a><br/>
-					</p>
-				</div>
-
-				<div id="info" class="col-lg-4">
-					<h4>Site Info</h4>
-          <p>Icons made by<a href="http://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a>from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>is licensed by<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
-					<p>This site is built and maintained by Landon McKee.</p>
-				</div>
-      </div>
-    </div>
-  </div>
+      <h1 class="title">Random Quote Machine</h1>
+	     <p>Application recieves quote data from Forismatic API</p>
+	      <div id = quoteBox class = "container quoteBox">
+	         <p id = "quote"></p>
+	         <p id = "author"</p>
+	      </div>
+	  <div class = "container buttonArea">
+		  <a id="tweetButton" target="_blank" rel="noopener noreferrer"> <img class="tweetLogo" src="http://www.attendly.com/wp-content/themes/attendly2/img/icon-twitter.svg"></a>
+			  <button class="quote-btn btn btn-primary" onclick="newQuote()">New Quote</button>
+	  </div>
+  </div> <!-- containter-fluid text-center -->
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script src='quotescript.js'></script>
