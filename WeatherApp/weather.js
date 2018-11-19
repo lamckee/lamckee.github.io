@@ -3,6 +3,7 @@ var weather_result = '';
 $(document).ready(function(){
   /* Using GeoPlugin to find where our end user is located
      Use this link for future reference: http://www.geoplugin.com/ */
+     $.getScript("http://www.geoplugin.net/javascript.gp");
   var city =  geoplugin_city();
   var state =  geoplugin_regionName();
   var country =  geoplugin_countryCode();
