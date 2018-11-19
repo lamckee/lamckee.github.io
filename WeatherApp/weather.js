@@ -12,7 +12,7 @@ $(document).ready(function(){
   var api = "http://api.openweathermap.org/data/2.5/weather?"; // the beginning part of the url we are accessing --> Later joins with var URL.
   var unit = "metric";                         // units are sent to in metric system formats
   var id = "88d7747abc290c8a803e9c34ae064b02"; // This ID comes from OpenWeatherMap. It's unique and needed to access weather data.
-  var URL = api + "q=" + city + "," + country + "&units=" + unit + "&appid=" + id;
+  var URL = api + "q=" + city + "," + "&units=" + unit + "&appid=" + id;
 
   $("#city").html(city);
 
