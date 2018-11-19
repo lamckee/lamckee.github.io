@@ -3,10 +3,12 @@ var weather_result = '';
 $(document).ready(function(){
   /* Using GeoPlugin to find where our end user is located
      Use this link for future reference: http://www.geoplugin.com/ */
-     $getScript("http://www.geoplugin.net/javascript.gp");
-  var city =  geoplugin_city();
-  var state =  geoplugin_regionName();
-  var country =  geoplugin_countryCode();
+     $.get("http://ipinfo.io", function(response) {
+         console.log(response.city, response.country);
+         var city = response.city
+         var state = response.region
+         var country = response.country
+     }, "jsonp");
 
   var api = "http://api.openweathermap.org/data/2.5/weather?"; // the beginning part of the url we are accessing --> Later joins with var URL.
   var unit = "metric";                         // units are sent to in metric system formats
