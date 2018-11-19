@@ -5,17 +5,16 @@ $(document).ready(function(){
      Use this link for future reference: http://www.geoplugin.com/ */
      $.get("http://ipinfo.io", function(response) {
          console.log(response.city, response.country);
-         var city = response.city;
-         var state = response.region;
+         var city = response.city + ", " + response.region;
          var country = response.country;
      }, "jsonp");
 
   var api = "http://api.openweathermap.org/data/2.5/weather?"; // the beginning part of the url we are accessing --> Later joins with var URL.
   var unit = "metric";                         // units are sent to in metric system formats
   var id = "88d7747abc290c8a803e9c34ae064b02"; // This ID comes from OpenWeatherMap. It's unique and needed to access weather data.
-  var URL = api + "q=" + city + "," + state + "," + country + "&units=" + unit + "&appid=" + id;
+  var URL = api + "q=" + city + "," + country + "&units=" + unit + "&appid=" + id;
 
-  $("#city").html(city + ", " + state ); // put the city and state in respective location as text.
+  $("#city").html(city);
 
   $.ajax({
     url: URL,
