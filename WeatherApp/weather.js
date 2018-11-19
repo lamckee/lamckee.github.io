@@ -5,8 +5,7 @@ $(document).ready(function(){
      Use this link for future reference: http://www.geoplugin.com/ */
      $.get("http://ipinfo.io", function(response) {
          console.log(response.city, response.country);
-         var city = response.city + ", " + response.region;
-         var country = response.country;
+         var city = response.city + ", " + response.region + ", " + response.country;
      }, "jsonp");
 
   var api = "http://api.openweathermap.org/data/2.5/weather?"; // the beginning part of the url we are accessing --> Later joins with var URL.
